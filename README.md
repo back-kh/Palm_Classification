@@ -16,7 +16,7 @@ We employ a curated dataset of isolated palm leaf images, consisting of multiple
 
 ## Models
 
-1. **VGG (Visual Geometry Group)**
+1. **VGG**
    - **Description:** VGG is known for its simplicity and depth, utilizing small convolutional filters to capture intricate details. Its architecture allows for a straightforward approach to feature extraction.
    - **Use Case:** Best for scenarios where interpretability and feature visualization are essential.
 
