@@ -17,19 +17,25 @@ We employ a curated dataset of isolated palm leaf images, consisting of multiple
 ## Models
 
 1. **VGG (Visual Geometry Group)**
-   - Classic architecture known for simplicity and depth.
-  
+   - **Description:** VGG is known for its simplicity and depth, utilizing small convolutional filters to capture intricate details. Its architecture allows for a straightforward approach to feature extraction.
+   - **Use Case:** Best for scenarios where interpretability and feature visualization are essential.
+
 2. **ResNet (Residual Networks)**
-   - Introduces skip connections for deeper networks without vanishing gradients.
+   - **Description:** ResNet introduces skip connections, enabling the training of very deep networks without the vanishing gradient problem. This architecture allows for more effective feature learning.
+   - **Use Case:** Ideal for leveraging deeper architectures to significantly improve classification accuracy.
 
 3. **Efficient ViT (Vision Transformer)**
-   - Combines convolutional layers with transformer architecture.
+   - **Description:** Efficient ViT combines the local feature extraction of convolutional layers with the global context capabilities of transformers, optimizing both computational efficiency and performance.
+   - **Use Case:** Particularly effective for datasets with high variability and complexity.
 
 4. **Swin Transformer**
-   - A hierarchical transformer that processes images at various scales.
+   - **Description:** Swin Transformer employs a hierarchical architecture that processes images at various scales, effectively capturing local and global features.
+   - **Use Case:** Suitable for tasks requiring high-resolution inputs, making it versatile across different image sizes.
 
 5. **CvT (Convolutional Vision Transformer)**
-   - Hybrid model that incorporates convolutional layers with transformer architecture.
+   - **Description:** CvT merges convolutional layers with transformer architectures, improving local feature extraction while maintaining global understanding, resulting in better performance in complex classification tasks.
+   - **Use Case:** Excels in scenarios that require a balance between local detail and global context.
+
 
 ## Evaluation Metrics
 
