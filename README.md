@@ -24,8 +24,8 @@ We employ a curated dataset of isolated palm leaf images, consisting of multiple
    - **Description:** ResNet introduces skip connections, enabling the training of very deep networks without the vanishing gradient problem. This architecture allows for more effective feature learning.
    - **Use Case:** Ideal for leveraging deeper architectures to significantly improve classification accuracy.
 
-3. **Efficient ViT (Vision Transformer)**
-   - **Description:** Efficient ViT combines the local feature extraction of convolutional layers with the global context capabilities of transformers, optimizing both computational efficiency and performance.
+3. **ViT (Vision Transformer)**
+   - **Description:** ViT combines the local feature extraction of convolutional layers with the global context capabilities of transformers, optimizing both computational efficiency and performance.
    - **Use Case:** Particularly effective for datasets with high variability and complexity.
 
 4. **Swin Transformer**
