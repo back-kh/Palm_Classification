@@ -3,10 +3,10 @@ import pandas as pd
 from sklearn import preprocessing
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-BASE_TRAIN_DIR = "/content/Text-Classification/train_image"
-BASE_TEST_DIR = "/content/Text-Classification/test_image"
-TRAIN_LABEL_PATH = "/content/Text-Classification/gt_train.txt"
-TEST_LABEL_PATH = "/content/Text-Classification/gt_test.txt"
+BASE_TRAIN_DIR = "Text-Classification/train_image"
+BASE_TEST_DIR = "Text-Classification/test_image"
+TRAIN_LABEL_PATH = "ext-Classification/gt_train.txt"
+TEST_LABEL_PATH = "Text-Classification/gt_test.txt"
 IMG_HEIGHT, IMG_WIDTH, IMG_CHANNELS = 224, 224, 3
 BATCH_SIZE = 32
 
@@ -16,7 +16,7 @@ def load_data():
     return df_train, df_test
 
 def load_classes():
-    with open("/content/Text-Classification/list_class_name.txt", 'r') as file:
+    with open("Text-Classification/list_class_name.txt", 'r') as file:
         vocab = [i_word for i_word in file.read().split("\n") if i_word != '']
     return {label: idx for idx, label in enumerate(vocab)}
 
