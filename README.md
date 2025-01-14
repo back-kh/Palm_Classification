@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the Isolated Palm Leaf Classification Benchmark! This project aims to improve the classification of isolated palm leaf images using various Convolutional Neural Network (CNN) architectures. Leveraging the strengths of models like VGG, ResNet, Efficient ViT, Swin, and CvT, we present a framework for enhancing classification accuracy and efficiency.
+Welcome to the Isolated Palm Leaf Classification Benchmark! This project aims to improve the classification of isolated palm leaf images using various Convolutional Neural Network (CNN) architectures. Leveraging the strengths of models like VGG, ResNet, Efficient ViT, Swin, CvT and HybridCNN-Swin. we present a framework for enhancing classification accuracy and efficiency.
 
 ## Project Goals
 
@@ -35,7 +35,10 @@ We employ a curated dataset of isolated palm leaf images, consisting of multiple
 5. **CvT (Convolutional Vision Transformer)**
    - **Description:** CvT merges convolutional layers with transformer architectures, improving local feature extraction while maintaining global understanding, resulting in better performance in complex classification tasks.
    - **Use Case:** Excels in scenarios that require a balance between local detail and global context.
-
+6. **Hybrid CNN + Swin Transformer Model**
+   - **Convolutional layers:** will be used initially to capture local features.
+   - **Swin Transformer layers:** will then process the features from the convolutional layers to capture long-range dependencies and global context.
+   - The output will go through a fully connected layer for classification.
 
 ## Evaluation Metrics
 
